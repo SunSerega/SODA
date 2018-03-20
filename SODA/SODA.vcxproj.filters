@@ -5,28 +5,61 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Файлы ресурсов">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Внутреннее">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Console">
+      <UniqueIdentifier>{c21fc7cb-7a4f-4a2d-84fe-39cd78811149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PlayerMob">
+      <UniqueIdentifier>{19736aef-c263-4d14-b818-6a897b50fb8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Game">
+      <UniqueIdentifier>{f675c841-5aa7-4414-97c3-34ac869b6000}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Внутреннее</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Внутреннее</Filter>
+    </ClInclude>
+    <ClInclude Include="Доп функции и типы.h">
+      <Filter>Внутреннее</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Исходные файлы\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMob.h">
+      <Filter>Исходные файлы\PlayerMob</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Внутреннее</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="SODA.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Game1.cpp">
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Внутреннее</Filter>
+    </ClCompile>
+    <ClCompile Include="Доп функции и типы.cpp">
+      <Filter>Внутреннее</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Исходные файлы\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMob.cpp">
+      <Filter>Исходные файлы\PlayerMob</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
