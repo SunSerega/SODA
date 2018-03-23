@@ -44,10 +44,7 @@ private:
 
 	static Mob Mobs[3];
 
-	static std::string* AddNameAndNum(const char* name, unsigned int num)
-	{
-		return new std::string(std::string(name) + std::to_string(num));
-	}
+	static std::string* AddNameAndNum(const char* name, unsigned int num);
 
 public:
 	Mob(const Mob& mob) :
@@ -59,29 +56,7 @@ public:
 			this->name = new std::string(*mob.name);
 	}
 
-	static Mob GetNew()
-	{
-		Mob& mob = Mobs[rand() % 3];
-
-		static unsigned int slimy_s = 0;
-		static unsigned int orcy_s = 0;
-		static unsigned int dragy_s = 0;
-
-		switch (mob.sym)
-		{
-		case 's':
-			mob.name = AddNameAndNum("Slimy ", ++slimy_s);
-			break;
-		case 'o':
-			mob.name = AddNameAndNum("Orcy ", ++orcy_s);
-			break;
-		case 'd':
-			mob.name = AddNameAndNum("Dragy ", ++dragy_s);
-			break;
-		}
-
-		return mob;
-	}
+	static Mob GetNew();
 
 	static const char* SlimeHealText[3];
 	static const char* OrcHealText[3];
@@ -93,20 +68,11 @@ public:
 
 	bool GetHit(float hits);
 
-	std::string GetName()
-	{
-		return *name;
-	}
+	std::string GetName();
 
-	int GetGold()
-	{
-		return gold;
-	}
+	int GetGold();
 
-	float GetDamage()
-	{
-		return damage;
-	}
+	float GetDamage();
 
 	char GetSym();
 
@@ -114,18 +80,9 @@ public:
 
 	using Entity::IsAlive;
 
-	void Print()
-	{
-		std::cout <<
-			sym << ": " << says << '\n' <<
-			"His name is " << *name << '\n' <<
-			"He have " << health << " health and deals up to " << damage << " damage\n";
-	}
+	void Print();
 
-	~Mob()
-	{
-		delete name;
-	}
+	~Mob();
 
 };
 

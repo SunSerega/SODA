@@ -54,7 +54,7 @@ void Game::SayWinThing(Player& player)
 		"\nYou reached lvl 20!\n" <<
 		"With that - you won the game, carrying home " << player.GetGold() << " gold\n"
 		"y: continue\n" <<
-		"every thing else: exit\n";
+		"everything else: exit\n";
 	char act;
 	std::cin >> act;
 	if (act != 'y')
@@ -80,7 +80,7 @@ void Game::PlayerDeath(Player & player, Mob & mob)
 {
 	std::cout <<
 		"\nYou mystiryosly died in front of " << mob.GetName() << ".\n" <<
-		"Last thing you remember was " << player.GetGold() << " gold, you will not have opportunity to spend...\n" <<
+		"Last thing you remember was " << player.GetGold() << " gold, you wouldn't be able to spend...\n" <<
 		"\nPress Enter to exit\n";
 	Console::WaitInput();
 	exit(0);
@@ -90,7 +90,7 @@ void Game::PlayerDeath(Player & player)
 {
 	std::cout <<
 		"You died from poisen\n" <<
-		"Last thing you remember was " << player.GetGold() << " gold, you will not have opportunity to spend...\n" <<
+		"Last thing you remember was " << player.GetGold() << " gold, you wouldn't be able to spend...\n" <<
 		"Press Enter to exit";
 	Console::WaitInput();
 	exit(0);
@@ -100,7 +100,7 @@ bool Game::Atack(Player & player, Mob & mob)
 {
 	if (player.GetSwordBreaks() >= 10)
 	{
-		std::cout << "Your sword is broken. You can't figth";
+		std::cout << "Your sword is broken. You can't fight";
 		return false;
 	}
 	float hits;
@@ -140,7 +140,7 @@ bool Game::Atack(Player & player, Mob & mob)
 				std::cout << "You managed to hit " << mob.GetName() << " rigth in he's hearth\n";
 				break;
 			case 'd':
-				std::cout << "You managed to hit " << mob.GetName() << " rigth in he's g point. He поперхнулся своим же огнём and blow up\n";
+				std::cout << "You managed to hit " << mob.GetName() << " rigth in he's g point. He choked on his own fire and blow up\n";
 				break;
 			}
 			mob.GetHit(mob.GetHealth());
@@ -169,7 +169,7 @@ bool Game::Atack(Mob & mob, Player & player)
 	switch (rand() % 5)
 	{
 	case 0:
-		std::cout << mob.GetName() << " tried as hard as he coud, but his attack was slow\n";
+		std::cout << mob.GetName() << " tried as hard as he could, but his attack was still slow\n";
 		if (rand() % 3 == 0)
 		{
 			std::cout << "Unfortunately " << mob.GetName() << " missed you\n";
@@ -178,7 +178,7 @@ bool Game::Atack(Mob & mob, Player & player)
 		hits = ((float(rand()) / RAND_MAX) * 0.1f + 0.0f) * mob.GetDamage();
 		break;
 	case 1:
-		std::cout << mob.GetName() << " tried as hard as he coud, but his attack was slow. You wasn't paying\nenoght attention, thou\n";
+		std::cout << mob.GetName() << " tried as hard as he could, but his attack was slow. You wasn't paying\nenoght attention, though\n";
 		hits = ((float(rand()) / RAND_MAX) * 0.2f + 0.1f) * mob.GetDamage();
 		break;
 	case 2:

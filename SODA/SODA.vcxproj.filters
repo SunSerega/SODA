@@ -40,7 +40,7 @@
       <Filter>Исходные файлы\PlayerMob</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
-      <Filter>Внутреннее</Filter>
+      <Filter>Исходные файлы\Game</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -60,7 +60,7 @@
       <Filter>Исходные файлы\PlayerMob</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Game</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
