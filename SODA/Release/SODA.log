@@ -1,11 +1,7 @@
-﻿  Console.cpp
-  Game.cpp
-  PlayerMob.cpp
-  SODA.cpp
-  Доп функции и типы.cpp
-  Создание кода
-  166 of 170 functions (97.6%) were compiled, the rest were copied from previous compilation.
-    3 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Создание кода завершено
-  SODA.vcxproj -> D:\1Cергей\Мои программы\SODA\Release\SODA.exe
+﻿  PlayerMob.cpp
+  Generating code
+  1 of 170 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  SODA.vcxproj -> D:\1Cергей\Мои программы\проекты\SODA\Release\SODA.exe

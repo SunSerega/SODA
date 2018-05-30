@@ -101,7 +101,7 @@ void Mob::Print()
 	std::cout <<
 		sym << ": " << says << '\n' <<
 		"His name is " << *name << '\n' <<
-		"He have " << health << " health and deals up to " << damage << " damage\n";
+		"He have " << health << " health and wants to be friends with you for up to " << damage << "\n";
 }
 
 Mob::~Mob()
